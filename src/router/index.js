@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import FrontPage from '../components/FrontPage.vue';
-import BrowseImages from '../components/BrowseImages.vue';
+import FrontPage from '../views/About.vue';
+import BrowseImages from '../views/Browse.vue';
 
 const routes = [
   {
