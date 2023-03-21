@@ -1,10 +1,10 @@
 <template>
   <div class="col">
     <div class="card">
-      <img :src="url" :alt="name" class="bd-placeholder-img card-img-top" width="100%" height="225" />
-        <title _mstTextHash="177515" _mstHash="14">Placeholder</title>
-        <text x="50%" y="50%" fill="#eceeef" dy=".3em" _mstTextHash="134056" _mstHash="15">{{ name }}</text>
-      <div class="card-body">
+      <img @click="viewImage(id)" :src="url" :alt="name" class="bd-placeholder-img card-img-top" width="100%" height="225" />
+      <title _mstTextHash="177515" _mstHash="14">Placeholder</title>
+      <text x="50%" y="50%" fill="#eceeef" dy=".3em" _mstTextHash="134056" _mstHash="15">{{ name }}</text>
+      <div class="card-body" @click="viewImage(id)">
         <p class="card-text" _msttexthash="9192963" _msthash="16" style="direction: ltr; text-align: left" >
           {{ description }}
         </p>
@@ -14,7 +14,12 @@
               width
             </button>
             <button type="button" class="btn btn-sm btn-primary" _msttexthash="162188" _msthash="18" style="direction: ltr">
-              modulation
+              <router-link :to="{
+                name: 'ViewImage',
+                params: {
+                  index: index
+                }
+              }">View</router-link>
             </button>
           </div>
           <small class="text-muted" _msttexthash="115934" _msthash="19" style="direction: ltr; text-align: left">
@@ -30,9 +35,15 @@
 export default {
   name: "AlbumCard",
   props: {
+    id: Number,
     url: String,
     name: String,
     description: String,
+  },
+  data() {
+    return {
+      index: this.id, // Set the index of the image you want to display
+    }
   },
   computed: {
     randomTimestamp() {
@@ -45,6 +56,11 @@ export default {
   created() {
     console.log('AlbumCard props:', this.url, this.name, this.description);
   },
+  methods: {
+    viewImage(index) {
+      this.$router.push({ name: 'ViewImage', params: { index } });
+    }
+  }
 };
 </script>
 

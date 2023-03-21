@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import FrontPage from '../views/About.vue';
 import BrowseImages from '../views/Browse.vue';
+import UploadImages from '../views/Upload.vue';
+import ViewImage from '../components/ViewImage.vue';
 
 const routes = [
   {
@@ -9,9 +11,19 @@ const routes = [
     component: FrontPage,
   },
   {
-    path: '/browse-images',
+    path: '/browse',
     name: 'BrowseImages',
     component: BrowseImages,
+  },
+  {
+    path: '/upload',
+    name: 'UploadImages',
+    component: UploadImages
+  },
+  {
+    path: '/view/:index',
+    name: 'ViewImage',
+    component: ViewImage,
   },
 ];
 

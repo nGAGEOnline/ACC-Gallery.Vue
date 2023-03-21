@@ -16,7 +16,10 @@
 								<router-link to="/" class="nav-link" active-class="active" exact>About</router-link>
 							</li>
 							<li class="nav-item">
-								<router-link to="/browse-images" class="nav-link" active-class="active" exact>Browse Images</router-link>
+								<router-link to="/browse" class="nav-link" active-class="active" exact>Browses</router-link>
+							</li>
+							<li class="nav-item">
+								<router-link to="/upload" class="nav-link" active-class="active" exact>Upload</router-link>
 							</li>
 						</ul>
 					</div>
