@@ -2,55 +2,61 @@
 	<header class="text-bg-primary">
 		<nav class="navbar navbar-expand-lg navbar-light bg-primary">
 			<div class="container-fluid">
-					<button
-						class="navbar-toggler"
-						style="float: right;"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarNav"
-						aria-controls="navbarNav"
-						aria-expanded="false"
-						aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+				<button
+					class="navbar-toggler"
+					style="float: right"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-					<div class="container collapse navbar-collapse" id="navbarNav">
+				<div class="container collapse navbar-collapse" id="navbarNav">
 					<router-link to="/" class="navbar-brand branding">
 						<img src="/logo.png" width="30" height="30" />
 						ACC
 					</router-link>
 					<ul class="navbar-nav col-8 mb-2 mb-lg-0">
+						<li class="nav-item">
+							<router-link to="/" class="nav-link" active-class="active" exact>Browse</router-link>
+						</li>
+						<li class="nav-item">
+							<router-link to="/upload" class="nav-link" active-class="active" exact>Upload</router-link>
+						</li>
+						<li class="nav-item">
+							<router-link to="/about" class="nav-link" active-class="active" exact>About</router-link>
+						</li>
+						<li class="nav-item d-lg-none">
+							<a href="https://github.com/nGAGEOnline/vue-image-gallery-test" class="nav-link" target="_blank">Github</a>
+						</li>
+						<li class="nav-item d-lg-none">
+							<span class="nav-link login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</span>
+						</li>
+						<li class="nav-item d-lg-none">
+							<span class="nav-link signup" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</span>
+						</li>
+					</ul>
+					<div class="col-4 col-lg-auto text-end">
+						<ul class="navbar-nav ms-auto d-none d-lg-flex">
 							<li class="nav-item">
-								<router-link to="/" class="nav-link" active-class="active" exact>Browse</router-link>
+								<a
+									href="https://github.com/nGAGEOnline/vue-image-gallery-test"
+									class="btn btn-secondary me-2 mt-2 bi bi-github"
+									target="_blank" />
 							</li>
 							<li class="nav-item">
-								<router-link to="/upload" class="nav-link" active-class="active" exact>Upload</router-link>
+								<button class="btn btn-outline-success me-2 mt-2 login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
 							</li>
 							<li class="nav-item">
-								<router-link to="/about" class="nav-link" active-class="active" exact>About</router-link>
-							</li>
-							<li class="nav-item d-lg-none">
-								<span class="nav-link login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</span>
-							</li>
-							<li class="nav-item d-lg-none">
-								<span class="nav-link signup" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</span>
+								<button class="btn btn-success me-2 mt-2 signup" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
 							</li>
 						</ul>
-						<div class="col-4 col-lg-auto text-end">
-							<ul class="navbar-nav ms-auto d-none d-lg-flex">
-								<li class="nav-item">
-									<a href="https://github.com/nGAGEOnline/vue-image-gallery-test" class="btn btn-secondary me-2 mt-2 bi bi-github" target="_blank" />
-								</li>
-								<li class="nav-item">
-									<button class="btn btn-outline-success me-2 mt-2 login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
-								</li>
-								<li class="nav-item">
-									<button class="btn btn-success me-2 mt-2 signup" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
-								</li>
-							</ul>
-						</div>
 					</div>
 				</div>
+			</div>
 		</nav>
 	</header>
 
@@ -175,7 +181,6 @@ export default {
 .login:hover {
 }
 .signup {
-	
 }
 
 .shadow-lg {
@@ -183,7 +188,7 @@ export default {
 }
 .navbar {
 	box-shadow: 2px 4px 8px #05050580 !important;
-	background-color: #151515!important;
+	background-color: #151515 !important;
 	border-bottom: 2px solid #158f6a;
 	padding: 0;
 }
@@ -228,15 +233,14 @@ li.nav-item a.active {
 	content: "Gallery";
 }
 .btn-primary {
-	background-color: #158f6a!important;
+	background-color: #158f6a !important;
 }
 .btn-secondary {
-	background-color: #353535!important;
+	background-color: #353535 !important;
 	border-color: #303030;
 }
 .btn-secondary:hover {
-	background-color: #4cb191!important;
+	background-color: #4cb191 !important;
 	color: #afc;
 }
-
 </style>
