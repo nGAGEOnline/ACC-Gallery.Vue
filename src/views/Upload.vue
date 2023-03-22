@@ -1,10 +1,11 @@
 <template>
 
   <div class="container">
-    <div class="container-fluid py-5 col-md-10 jumpbotron bg-secondary">
-      <h1 class="display-5 fw-bold">Upload</h1>
-      <p class="col-md-12 fs-4">Upload your greatest Assetto Corsa Competizione moments here.</p>
+    <h1 class="display-4 fw-bold lh-1">Upload Images</h1>
+    <div class="container-fluid py-5 col-md-12 jumpbotron bg-secondary">
+      <p class="col-md-12 fs-4 mb-5">Upload your greatest Assetto Corsa Competizione moments and share them with the community.</p>
       <button class="btn btn-primary btn-lg" type="button" @click="openFileBrowser"><i class="bi bi-upload"></i>Upload Image</button>
+
       <input type="file" ref="fileInput" style="display: none;" @change="handleFileUpload" />
     </div>
   </div>
@@ -25,9 +26,13 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+h1 {
+  border-bottom: 4px solid #1f634e;
+  margin: 40px 10px;
+}
 .bg-secondary {
-	background-color: #101922!important;
+	background-color: #173028!important;
 }
 .jumpbotron {
   border-radius: 25px;
