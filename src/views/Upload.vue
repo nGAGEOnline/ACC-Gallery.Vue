@@ -34,6 +34,14 @@ h1 {
 .bg-secondary {
 	background-color: #173028!important;
 }
+.btn-primary {
+	background-color: #158f6a!important;
+	border-color: #303030;
+}
+.btn-primary:hover {
+	background-color: #4cb191!important;
+	color: #afc;
+}
 .jumpbotron {
   border-radius: 25px;
   border: 1px solid #151515;

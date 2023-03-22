@@ -208,6 +208,7 @@ export default {
 }
 li.nav-item:hover a.active,
 .nav-link:hover {
+	color: #8be2c7;
 	background-color: #158f6a;
 }
 li.nav-item a.active {

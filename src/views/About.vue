@@ -7,8 +7,8 @@
 				<br />
 				<p class="lead">Assetto Corsa Competizione (ACC) is a realistic racing simulation video game developed by Kunos Simulazioni and published by 505 Games in 2019. As the official game of the GT World Challenge (formerly Blancpain GT Series), it offers players an immersive racing experience with authentic GT3 and GT4 cars, real-world tracks, and advanced driving physics. With a variety of game modes such as Career, Championship, and Multiplayer, ACC has earned praise for its realism, graphics, and attention to detail, making it a popular choice among sim racing enthusiasts.</p>
 				<div class="d-grid gap-2 d-md-flex justify-content-md-start mb-2 mt-5 mb-lg-1">
-					<router-link to="/" class="btn btn-danger btn-lg px-4 me-sm-3 fw-bold">Browse Images</router-link>
-					<a href="https://www.assettocorsa.it/competizione/" target="_blank" type="button" class="btn btn-secondary btn-lg px-4 me-md-2 fw-bold">Visit Website</a>
+					<router-link to="/" class="btn btn-primary btn-lg px-4 me-sm-3 fw-bold">Browse Images</router-link>
+					<a href="https://www.assettocorsa.it/competizione/" target="_blank" type="button" class="btn btn-danger btn-lg px-4 me-md-2 fw-bold">Visit Website</a>
 				</div>
 			</div>
 			<div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
@@ -58,6 +58,14 @@ img.bottom-img {
 }
 .bg-secondary {
 	background-color: #173028!important;
+}
+.btn-primary {
+	background-color: #158f6a!important;
+	border-color: #303030;
+}
+.btn-primary:hover {
+	background-color: #4cb191!important;
+	color: #afc;
 }
 </style>
   
