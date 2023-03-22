@@ -1,17 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import FrontPage from '../views/About.vue';
+import AboutPage from '../views/About.vue';
 import BrowseImages from '../views/Browse.vue';
 import UploadImages from '../views/Upload.vue';
 import ViewImage from '../components/ViewImage.vue';
 
 const routes = [
   {
-    path: '/',
-    name: 'FrontPage',
-    component: FrontPage,
+    path: '/about',
+    name: 'AboutPage',
+    component: AboutPage,
   },
   {
-    path: '/browse',
+    path: '/',
     name: 'BrowseImages',
     component: BrowseImages,
   },

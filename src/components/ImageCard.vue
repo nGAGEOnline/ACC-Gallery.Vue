@@ -8,8 +8,8 @@
         <p class="card-text" _msttexthash="9192963" _msthash="16" style="direction: ltr; text-align: left" >
           {{ description }}
         </p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
+        <div class="d-flex ">
+          <!-- <div class="btn-group">
             <button type="button" class="btn btn-sm btn-secondary" _msttexthash="63401" _msthash="17" style="direction: ltr">
               width
             </button>
@@ -21,8 +21,8 @@
                 }
               }">View</router-link>
             </button>
-          </div>
-          <small class="text-muted" _msttexthash="115934" _msthash="19" style="direction: ltr; text-align: left">
+          </div> -->
+          <small class="text-muted" _msttexthash="115934" _msthash="19" style="width: 100%; text-align: right">
             {{ randomTimestamp }}
           </small>
         </div>

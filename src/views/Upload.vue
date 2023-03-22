@@ -1,7 +1,7 @@
 <template>
 
   <div class="container">
-    <div class="container-fluid py-5 col-md-10 jumpbotron">
+    <div class="container-fluid py-5 col-md-10 jumpbotron bg-secondary">
       <h1 class="display-5 fw-bold">Upload</h1>
       <p class="col-md-12 fs-4">Upload your greatest Assetto Corsa Competizione moments here.</p>
       <button class="btn btn-primary btn-lg" type="button" @click="openFileBrowser"><i class="bi bi-upload"></i>Upload Image</button>
@@ -26,12 +26,14 @@ export default {
 </script>
 
 <style>
+.bg-secondary {
+	background-color: #101922!important;
+}
 .jumpbotron {
   border-radius: 25px;
   border: 1px solid #151515;
   padding: 20px 40px;
   margin: 40px auto;
-  background-color: #2b2b2e;
   box-shadow: 2px 4px 4px #05050580;
 }
 .bi-upload {

@@ -21,13 +21,8 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <router-link to="/" class="nav-link" active-class="active" exact
-                  >About</router-link
-                >
-              </li>
-              <li class="nav-item">
                 <router-link
-                  to="/browse"
+                  to="/"
                   class="nav-link"
                   active-class="active"
                   exact
@@ -43,25 +38,28 @@
                   >Upload</router-link
                 >
               </li>
-            </ul>
-            <ul class="navbar-nav content-right">
               <li class="nav-item">
-                <button
-                  class="btn btn-primary mx-2"
+                <router-link to="/about" class="nav-link" active-class="active" exact
+                  >About</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <span
+                  class="nav-link login"
                   data-bs-toggle="modal"
                   data-bs-target="#loginModal"
                 >
                   Login
-                </button>
+                </span>
               </li>
               <li class="nav-item">
-                <button
-                  class="btn btn-secondary mx-2"
+                <span
+                  class="nav-link signup"
                   data-bs-toggle="modal"
                   data-bs-target="#signupModal"
                 >
                   Sign Up
-                </button>
+                </span>
               </li>
             </ul>
           </div>
@@ -158,7 +156,6 @@
         </div>
       </div>
     </div>
-
 
     <div
       class="modal fade"
@@ -261,15 +258,22 @@ export default {
 </script>
 
 <style>
+.signup,
+.login {
+  background-color: #1b1f22;
+  cursor: pointer;
+  margin-right: 2px;
+}
+.signup:hover,
+.login:hover {
+    background-color: #305377;
+}
+
 .shadow-lg {
   box-shadow: 4px 8px 8px #05050580 !important;
 }
 .navbar {
   padding: 0;
-}
-.navbar .content-right {
-  width: 600px;
-  float: right;
 }
 .navbar ul {
   width: 100%;

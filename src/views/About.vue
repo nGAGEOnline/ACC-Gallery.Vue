@@ -1,6 +1,6 @@
 <template>
 	<div class="container my-5">
-		<div class="row p-4 pb-0 pe-lg-0 pt-lg-3 align-items-center rounded-4 border shadow-lg">
+		<div class="row p-4 pb-0 pe-lg-0 pt-lg-3 align-items-center rounded-4 border shadow-lg bg-secondary">
 			<div class="col-lg-7 p-3 p-lg-5 pt-lg-2">
 			<h1 class="display-4 fw-bold lh-1">Assetto Corsa Competizione</h1>
 			<p class="lead">Assetto Corsa Competizione (ACC) is a realistic racing simulation video game developed by Kunos Simulazioni and published by 505 Games in 2019. As the official game of the GT World Challenge (formerly Blancpain GT Series), it offers players an immersive racing experience with authentic GT3 and GT4 cars, real-world tracks, and advanced driving physics. With a variety of game modes such as Career, Championship, and Multiplayer, ACC has earned praise for its realism, graphics, and attention to detail, making it a popular choice among sim racing enthusiasts.</p>
@@ -19,7 +19,7 @@
   
 <script>
 export default {
-	name: 'FrontPage',
+	name: 'AboutPage',
 };
 </script>
 
@@ -55,6 +55,9 @@ img.bottom-img {
 .container.my-5 .row {
 	margin: 0 auto;
 	width: 90%;
+}
+.bg-secondary {
+	background-color: #101922!important;
 }
 </style>
   
