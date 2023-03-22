@@ -21,7 +21,7 @@
 					</router-link>
 					<ul class="navbar-nav col-8 mb-2 mb-lg-0">
 							<li class="nav-item">
-								<router-link to="/" class="nav-link" active-class="active" exact>Browses</router-link>
+								<router-link to="/" class="nav-link" active-class="active" exact>Browse</router-link>
 							</li>
 							<li class="nav-item">
 								<router-link to="/upload" class="nav-link" active-class="active" exact>Upload</router-link>
