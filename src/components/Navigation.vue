@@ -39,6 +39,9 @@
 						<div class="col-4 col-lg-auto text-end">
 							<ul class="navbar-nav ms-auto d-none d-lg-flex">
 								<li class="nav-item">
+									<a href="https://github.com/nGAGEOnline/vue-image-gallery-test" class="btn btn-secondary me-2 mt-2 bi bi-github" target="_blank" />
+								</li>
+								<li class="nav-item">
 									<button class="btn btn-outline-success me-2 mt-2 login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
 								</li>
 								<li class="nav-item">
@@ -162,10 +165,7 @@ export default {
 };
 </script>
 
-<style>
-.btn-primary {
-	background-color: #158f6a!important;
-}
+<style scoped>
 .signup,
 .login {
 	cursor: pointer;
@@ -225,6 +225,17 @@ li.nav-item a.active {
 }
 .branding::after {
 	content: "Gallery";
+}
+.btn-primary {
+	background-color: #158f6a!important;
+}
+.btn-secondary {
+	background-color: #353535!important;
+	border-color: #303030;
+}
+.btn-secondary:hover {
+	background-color: #4cb191!important;
+	color: #afc;
 }
 
 </style>

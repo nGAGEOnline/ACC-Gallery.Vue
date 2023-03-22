@@ -102,6 +102,21 @@ export default {
 	}
 }
 
+.btn-primary {
+	background-color: #158f6a!important;
+	border-color: #303030;
+}
+.btn-primary:hover {
+	background-color: #4cb191!important;
+	color: #afc;
+}
+.btn-secondary {
+	background-color: #151515!important;
+	border-color: #303030;
+}
+.btn-secondary:hover {
+	background-color: #252525!important;
+}
 .card {
 	animation: scaleBack 0.3s ease-in-out forwards;
 	box-shadow: 2px 4px 4px #05050580;
