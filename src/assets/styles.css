@@ -176,6 +176,15 @@ input[type="color"]::selection,
 	outline: 0 none;
 }
 
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 @keyframes slideInLeft {
 	from {
 		opacity: 0;
@@ -203,11 +212,13 @@ input[type="color"]::selection,
 		opacity: 1;
 	}
 }
-@keyframes fadeIn {
+@keyframes slideInUp {
 	from {
 		opacity: 0;
+		transform: translateY(100%);
 	}
 	to {
+		transform: translateY(0);
 		opacity: 1;
 	}
 }

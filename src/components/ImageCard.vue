@@ -82,7 +82,6 @@ export default {
 			const startOfYear = new Date(new Date().getFullYear(), 0, 1);
 			const now = new Date();
 			const randomTimestamp = new Date(startOfYear.getTime() + Math.random() * (now.getTime() - startOfYear.getTime()));
-			console.log(this.$refs.cardload);
 			return randomTimestamp.toLocaleDateString();
 		},
 	},
