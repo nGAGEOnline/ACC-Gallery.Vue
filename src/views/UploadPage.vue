@@ -16,6 +16,9 @@
 <script>
 export default {
 	name: "UploadPage",
+	metaInfo: {
+		title: "Upload",
+	},
 	methods: {
 		openFileBrowser() {
 			this.$refs.fileInput.click();

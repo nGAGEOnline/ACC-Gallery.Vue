@@ -28,10 +28,10 @@ export default {
 .bg-footer {
 	background-color: #151515;
 	/* background-image: linear-gradient(90deg, #114434 0%, #1f7a5f 50%, #114434 100%); */
-	/* background-image: linear-gradient(90deg, #151515 0%, #202020 50%, #151515 100%); */
-	color: #52c595;
-	border-top: 2px solid #1f7a5f;
-	box-shadow: -2px -4px 8px #0004;
+	/* background-image: linear-gradient(90deg, #101010 0%, #202020 50%, #101010 100%); */
+	color: #666;
+	border-top: 2px solid #202020;
+	box-shadow: -2px -4px 12px #000a;
 	padding: 0;
 
 	opacity: 0;
@@ -49,6 +49,7 @@ export default {
 	width: 100%;
     z-index: 1000;
 }
+
 .footer .container {
 	opacity: 0;
 	animation: fadeIn 2s ease 1.5s forwards;
