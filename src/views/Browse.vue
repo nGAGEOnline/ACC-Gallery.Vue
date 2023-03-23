@@ -31,10 +31,3 @@ export default {
 	},
 };
 </script>
-
-<style scoped>
-h1 {
-	border-bottom: 4px solid #1f634e;
-	margin: 40px 10px;
-}
-</style>

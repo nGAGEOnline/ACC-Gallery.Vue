@@ -53,6 +53,7 @@ export default {
 .image-container h1 {
   position: absolute;
   padding: 10px 20px 10px 20px;
+  margin: 0;
   top: 0;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.8em;
@@ -62,7 +63,6 @@ export default {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: #101010e0;
-  /* background-image: linear-gradient(90deg, #050505d0 10%, #0c0f1190); */
   border-bottom: 1px solid #0c131a;
 }
 .image-container p {
@@ -88,7 +88,7 @@ export default {
 .image-container p,
 .image-container h1,
 .image-container div.previous-next-buttons {
-  animation: fadeOut 3s ease-in 0.3s backwards;
+  animation: fadeOut 2s ease-in 1s backwards;
   opacity: 0.25;
 }
 .image-container a {
@@ -101,7 +101,7 @@ export default {
 .image-container:hover p,
 .image-container:hover h1,
 .image-container:hover div.previous-next-buttons {
-  animation: fadeIn 0.5s ease-in-out 0.3s forwards;
+  animation: fadeIn ease-in-out 0.3s forwards;
 }
 @keyframes fadeIn {
   from {

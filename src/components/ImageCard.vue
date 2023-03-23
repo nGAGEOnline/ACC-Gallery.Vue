@@ -9,7 +9,7 @@
 				height="225"
 				data-bs-toggle="modal"
 				:data-bs-target="'#viewModal-' + id" />
-			<title _mstTextHash="177515" _mstHash="14">Placeholder</title>
+			<title _mstTextHash="177515" _mstHash="14">{{ name }}</title>
 			<text x="50%" y="50%" fill="#eceeef" dy=".3em" _mstTextHash="134056" _mstHash="15">{{ name }}</text>
 			<div class="card-body">
 				<p class="card-text" _msttexthash="9192963" _msthash="16" style="direction: ltr; text-align: left">
@@ -34,7 +34,7 @@
 		<div class="modal-dialog modal-fullscreen">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="viewModalLabel">View</h5>
+					<h5 class="modal-title" id="viewModalLabel">{{ name }}</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 
@@ -85,38 +85,6 @@ export default {
 </script>
 
 <style scoped>
-@keyframes scaleUp {
-	from {
-		transform: scale(1);
-	}
-	to {
-		transform: scale(1.05);
-	}
-}
-@keyframes scaleBack {
-	from {
-		transform: scale(1.05);
-	}
-	to {
-		transform: scale(1);
-	}
-}
-
-.btn-primary {
-	background-color: #158f6a!important;
-	border-color: #303030;
-}
-.btn-primary:hover {
-	background-color: #4cb191!important;
-	color: #afc;
-}
-.btn-secondary {
-	background-color: #151515!important;
-	border-color: #303030;
-}
-.btn-secondary:hover {
-	background-color: #252525!important;
-}
 .card {
 	animation: scaleBack 0.3s ease-in-out forwards;
 	box-shadow: 2px 4px 4px #05050580;
@@ -144,5 +112,22 @@ export default {
 	border-bottom: 1px solid #0d221c;
 	padding: 5px 0 5px 15px;
 	font-weight: bold;
+}
+
+@keyframes scaleUp {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.05);
+	}
+}
+@keyframes scaleBack {
+	from {
+		transform: scale(1.05);
+	}
+	to {
+		transform: scale(1);
+	}
 }
 </style>

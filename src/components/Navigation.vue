@@ -19,7 +19,7 @@
 						<img src="/logo.png" width="30" height="30" />
 						ACC
 					</router-link>
-					<ul class="navbar-nav col-8 mb-2 mb-lg-0">
+					<ul class="navbar-nav col-sm-12 col-lg-8 mb-2 mb-lg-0">
 						<li class="nav-item">
 							<router-link to="/" class="nav-link" active-class="active" exact>Browse</router-link>
 						</li>
@@ -172,15 +172,21 @@ export default {
 </script>
 
 <style scoped>
-.signup,
-.login {
-	cursor: pointer;
-	margin-right: 2px;
+a.branding {
+	color: white;
 }
-.signup:hover,
-.login:hover {
+.branding img {
+	margin-right: 10px;
 }
-.signup {
+.navbar-toggler {
+	padding: 10px;
+	margin: 20px;
+}
+.branding::after {
+	content: "Gallery";
+}
+.container-fluid {
+	padding: 0;
 }
 
 .shadow-lg {
@@ -190,9 +196,6 @@ export default {
 	box-shadow: 2px 4px 8px #05050580 !important;
 	background-color: #151515 !important;
 	border-bottom: 2px solid #158f6a;
-	padding: 0;
-}
-.container-fluid {
 	padding: 0;
 }
 .navbar-brand {
@@ -207,12 +210,13 @@ export default {
 .nav-link {
 	color: #158f6a;
 	line-height: 40px;
+	margin: 0 4px;
 	padding: 10px 20px;
 	min-width: 100px;
 	text-align: center;
 }
-li.nav-item:hover a.active,
-.nav-link:hover {
+.nav-link:hover,
+li.nav-item:hover a.active {
 	color: #8be2c7;
 	background-color: #158f6a;
 }
@@ -220,27 +224,11 @@ li.nav-item a.active {
 	background-color: #1f634e;
 	line-height: 40px;
 	padding: 10px;
-	margin: 0 4px;
 }
-.branding {
-	color: white;
-	display: inline-block;
-}
-.branding img {
-	margin-right: 10px;
-}
-.branding::after {
-	content: "Gallery";
-}
-.btn-primary {
-	background-color: #158f6a !important;
-}
-.btn-secondary {
-	background-color: #353535 !important;
-	border-color: #303030;
-}
-.btn-secondary:hover {
-	background-color: #4cb191 !important;
-	color: #afc;
+
+.signup,
+.login {
+	cursor: pointer;
+	margin-right: 2px;
 }
 </style>

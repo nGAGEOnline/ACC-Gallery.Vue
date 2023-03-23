@@ -1,7 +1,7 @@
 <template>
 	<div class="container my-4">
 		<h1 class="display-4 fw-bold lh-1">Assetto Corsa Competizione</h1>
-		<div class="row p-4 pb-0 pe-lg-0 pt-lg-3 align-items-center rounded-4 border shadow-lg bg-secondary">
+		<div class="row p-4 pb-0 pe-lg-0 pt-lg-3 align-items-center rounded-4  shadow-lg bg-secondary">
 			<div class="col-lg-7 p-3 p-lg-5 pt-lg-2">
 				<h3>The ultimate racing game</h3>
 				<br />
@@ -25,47 +25,11 @@ export default {
 </script>
 
 <style scoped>
-h1 {
- border-bottom: 4px solid #1f634e;
-  margin: 40px 10px;
-}
 
-.shadow-lg {
-	box-shadow: 4px 8px 8px #05050580!important;
-}
-.border {
-	border-color: #151515!important;
-}
-.feature-img {
-	overflow: visible;
-	width: 100%; 
-	padding-top: 0; 
-	margin: 10px auto; 
-}
-img.bottom-img {
-	width: 100%;
-	box-shadow: 4px 8px 8px #05050580!important;
-	border: 1px solid #101922;
-	border-radius: 10px;
-}
-.front-page {
-	text-align: center;
-}
-
-.container.my-5 .row {
-	margin: 0 auto;
-	width: 90%;
-}
-.bg-secondary {
-	background-color: #173028!important;
-}
-.btn-primary {
-	background-color: #158f6a!important;
-	border-color: #303030;
-}
-.btn-primary:hover {
-	background-color: #4cb191!important;
-	color: #afc;
+.col-lg-4.offset-lg-1.p-0.overflow-hidden.shadow-lg,
+img.rounded-lg-3 {
+	opacity: 0;
+	animation: fadeIn 3s ease 1.5s forwards;
 }
 </style>
   

@@ -1,0 +1,40 @@
+h1 {
+    border-bottom: 4px solid #1f634e;
+    margin: 40px 10px;
+}
+
+.bg-secondary {
+	background-color: #263f37 !important;
+}
+.btn-primary {
+	background-color: #158f6a !important;
+	border-color: #303030;
+}
+.btn-primary:hover {
+	background-color: #4cb191 !important;
+	border-color: #303030;
+	color: #afc;
+}
+
+.btn-secondary {
+	background-color: #252525 !important;
+	border-color: #303030;
+}
+.btn-secondary:hover {
+	background-color: #4cb191 !important;
+	border-color: #303030;
+	color: #afc;
+}
+
+.shadow-lg {
+	box-shadow: 4px 8px 8px #05050580 !important;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
