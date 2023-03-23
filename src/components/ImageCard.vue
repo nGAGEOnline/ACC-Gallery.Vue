@@ -85,6 +85,10 @@ export default {
 </script>
 
 <style scoped>
+.bi {
+	padding-right: 0;
+}
+
 .card {
 	animation: scaleBack 0.3s ease-in-out forwards;
 	box-shadow: 2px 4px 4px #05050580;
