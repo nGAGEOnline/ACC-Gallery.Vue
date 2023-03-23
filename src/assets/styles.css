@@ -1,16 +1,32 @@
+/* HEADERS */
 h1 {
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 2.2em!important;
     border-bottom: 4px solid #1f634e;
+	text-transform: uppercase;
     margin: 40px 10px;
 }
 
+/* BACKGROUNDS */
 .bg-secondary {
 	background-color: #263f37 !important;
 }
+.bg-github {
+	background-color: #353535 !important;
+	color: #999;
+}
+.bg-github:hover {
+	background-color: #454545;
+	color: #eee;
+}
+
+/* BUTTONS */
 .btn-primary {
 	background-color: #158f6a !important;
 	border-color: #303030;
 }
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:active {
 	background-color: #4cb191 !important;
 	border-color: #303030;
 	color: #afc;
@@ -20,14 +36,137 @@ h1 {
 	background-color: #252525 !important;
 	border-color: #303030;
 }
-.btn-secondary:hover {
+.btn-secondary:hover,
+.btn-secondary:active {
 	background-color: #4cb191 !important;
 	border-color: #303030;
 	color: #afc;
 }
 
+/* SHADOW */
 .shadow-lg {
 	box-shadow: 4px 8px 8px #05050580 !important;
+}
+
+
+/* BOOTSTRAP ICONS */
+.bi {
+	padding-right: 10px;
+}
+
+/* INPUT */
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	border: 1px solid #454545;
+	background-color: #050505;
+	color: #252525;
+	outline: 0 none;
+}
+
+textarea:active,
+input[type="text"]:active,
+input[type="password"]:active,
+input[type="datetime"]:active,
+input[type="datetime-local"]:active,
+input[type="date"]:active,
+input[type="month"]:active,
+input[type="time"]:active,
+input[type="week"]:active,
+input[type="number"]:active,
+input[type="email"]:active,
+input[type="url"]:active,
+input[type="search"]:active,
+input[type="tel"]:active,
+input[type="color"]:active,
+.uneditable-input:active {
+	border: 1px solid #158f6a;
+	color: #158f6a;
+	box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.075) inset, 0 0 16px #158f6a;
+	outline: 0 none;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+	border: 1px solid #158f6a;
+	box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.075) inset, 0 0 16px #158f6a;
+	background-color:#050505;
+	outline: 0 none;
+}
+label[for=floatingInput],
+label[for=floatingPassword] {
+	color: #21634f;
+}
+textarea:active,
+input[type="text"]:active,
+input[type="password"]:active,
+input[type="datetime"]:active,
+input[type="datetime-local"]:active,
+input[type="date"]:active,
+input[type="month"]:active,
+input[type="time"]:active,
+input[type="week"]:active,
+input[type="number"]:active,
+input[type="email"]:active,
+input[type="url"]:active,
+input[type="search"]:active,
+input[type="tel"]:active,
+input[type="color"]:active,
+.uneditable-input:active {
+	border: 1px solid #158f6a;
+	color: #158f6a;
+	box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.075) inset, 0 0 16px #158f6a;
+	outline: 0 none;
+}
+
+body::selection,
+textarea::selection,
+input[type="text"]::selection,
+input[type="password"]::selection,
+input[type="datetime"]::selection,
+input[type="datetime-local"]::selection,
+input[type="date"]::selection,
+input[type="month"]::selection,
+input[type="time"]::selection,
+input[type="week"]::selection,
+input[type="number"]::selection,
+input[type="email"]::selection,
+input[type="url"]::selection,
+input[type="search"]::selection,
+input[type="tel"]::selection,
+input[type="color"]::selection,
+.uneditable-input::selection {
+	border: 1px solid #158f6a;
+	color: #158f6a;
+	box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.075) inset, 0 0 16px #158f6a;
+	outline: 0 none;
 }
 
 @keyframes fadeIn {

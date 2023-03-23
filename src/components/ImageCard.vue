@@ -92,6 +92,8 @@ export default {
 .card:hover {
 	animation: scaleUp 0.2s ease-in-out forwards;
 	z-index: 100;
+}
+.card img:hover {
 	cursor: pointer;
 }
 .card,

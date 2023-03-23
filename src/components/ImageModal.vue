@@ -41,9 +41,8 @@ export default {
 }
 .image-container {
   position: relative;
-  margin-top: 40px;
   width: 80%;
-  margin: 40px auto;
+  margin: 0 auto;
 }
 .image-container img {
   box-shadow: 2px 4px 4px #05050580;

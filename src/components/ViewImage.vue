@@ -87,9 +87,8 @@ export default {
 }
 .image-container {
   position: relative;
-  margin-top: 40px;
-  width: 80%;
   margin: 40px auto;
+  width: 80%;
 }
 .image-container img {
   box-shadow: 2px 4px 4px #05050580;
@@ -99,10 +98,10 @@ export default {
 .image-container h1 {
   position: absolute;
   padding: 10px 20px 10px 20px;
+  margin: 0;
   top: 0;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.8em;
-  height: auto;
   width: 100%;
   color: #cde;
   border-top-left-radius: 10px;
