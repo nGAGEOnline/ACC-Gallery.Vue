@@ -1,29 +1,35 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import AboutPage from '../views/About.vue';
-import BrowseImages from '../views/Browse.vue';
-import UploadImages from '../views/Upload.vue';
-import ViewImage from '../components/ViewImage.vue';
+import HomePage from '../views/HomePage.vue';
+import AboutPage from '../views/AboutPage.vue';
+import BrowsePage from '../views/BrowsePage.vue';
+import UploadPage from '../views/UploadPage.vue';
+import ImageViewer from '../components/ImageViewer.vue';
 
 const routes = [
+  {
+    path: '/',
+    name: 'HomePage',
+    component: HomePage,
+  },
   {
     path: '/about',
     name: 'AboutPage',
     component: AboutPage,
   },
   {
-    path: '/',
-    name: 'BrowseImages',
-    component: BrowseImages,
+    path: '/browse',
+    name: 'BrowsePage',
+    component: BrowsePage,
   },
   {
     path: '/upload',
-    name: 'UploadImages',
-    component: UploadImages
+    name: 'UploadPage',
+    component: UploadPage
   },
   {
-    path: '/view/:index',
-    name: 'ViewImage',
-    component: ViewImage,
+    path: '/viewer/:id',
+    name: 'ImageViewer',
+    component: ImageViewer,
   },
 ];
 

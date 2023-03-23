@@ -1,6 +1,6 @@
 <template>
 	<div class="col">
-		<div class="card">
+		<div class="card" :class="{ 'first-load': firstLoad, 'hovers': afterLoad }" :style="firstLoad ? { animationDelay: `${delay}s` } : null">
 			<img
 				:src="url"
 				:alt="name"
@@ -40,7 +40,7 @@
 				</div>
 
 				<div class="modal-body p-5 pt-5">
-					<ImageModal :url="url" :name="name" :description="description" />
+					<ImageModal :id="id" :url="url" :name="name" :description="description" />
 				</div>
 			</div>
 		</div>
@@ -48,7 +48,7 @@
 </template>
 
 <script>
-import ImageModal from "./ImageModal.vue";
+import ImageModal from "./Modals/ImageModal.vue";
 
 export default {
 	components: {
@@ -63,38 +63,54 @@ export default {
 	},
 	data() {
 		return {
+			firstLoad: true,
+			afterLoad: false,
+			delay: this.id * 0.12,
 			index: this.id, // Set the index of the image you want to display
 		};
+	},
+	mounted() {
+		setTimeout(() => {
+			this.firstLoad = false;
+			this.$nextTick(() => {
+				this.afterLoad = true;
+			});
+		}, 1800); // 3 second delay in milliseconds
 	},
 	computed: {
 		randomTimestamp() {
 			const startOfYear = new Date(new Date().getFullYear(), 0, 1);
 			const now = new Date();
 			const randomTimestamp = new Date(startOfYear.getTime() + Math.random() * (now.getTime() - startOfYear.getTime()));
+			console.log(this.$refs.cardload);
 			return randomTimestamp.toLocaleDateString();
 		},
 	},
-	created() {
-		console.log("AlbumCard props:", this.url, this.name, this.description);
-	},
 	methods: {
-		viewImage(index) {
-			this.$router.push({ name: "ViewImage", params: { index } });
+		viewImage(id) {
+			this.$router.push({ name: "ImageViewer", params: { id } });
 		},
 	},
 };
 </script>
 
 <style scoped>
-.bi {
-	padding-right: 0;
-}
 
+.first-load {
+	opacity: 0;
+	animation: fadeInDown .5s ease-in forwards;
+}
+.hovers {
+	animation-delay: 0;
+}
+.hovers:hover {
+	animation: scaleUp 0.2s ease-in-out both;
+	z-index: 100;
+}
 .card {
 	border-color: #151515;
 	border-radius: 10px;
 	color: #81e4c6;
-	animation: scaleBack 0.3s ease-in-out forwards;
 	box-shadow: 2px 4px 4px #05050580;
 }
 .card-body {
@@ -102,10 +118,7 @@ export default {
 	border-bottom-right-radius: 10px;
 	background-color: #105540;
 }
-.card:hover {
-	animation: scaleUp 0.2s ease-in-out forwards;
-	z-index: 100;
-}
+
 .card img {
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
@@ -132,7 +145,7 @@ div small.text-muted {
 		transform: scale(1.05);
 	}
 }
-@keyframes scaleBack {
+@keyframes scaleDown {
 	from {
 		transform: scale(1.05);
 	}

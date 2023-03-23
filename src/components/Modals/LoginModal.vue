@@ -37,8 +37,8 @@
 </template>
 
 <script>
-import SiteMessage from "./SiteMessage.vue";
-import ThirdPartyLogin from "./ThirdPartyLogin.vue";
+import SiteMessage from "../SiteMessage.vue";
+import ThirdPartyLogin from "../ThirdPartyLoginButton.vue";
 
 export default {
 	components: {

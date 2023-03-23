@@ -6,7 +6,7 @@
 
 <script>
 export default {
-	name: "ThirdPartyLogin",
+	name: "ThirdPartyLoginButton",
     props: {
         text: String,
         color: String,
@@ -14,3 +14,9 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+.bi {
+	padding-right: 10px;
+}
+</style>

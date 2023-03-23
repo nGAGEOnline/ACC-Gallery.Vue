@@ -21,7 +21,10 @@
 					</router-link>
 					<ul class="navbar-nav col-sm-12 col-lg-8 mb-2 mb-lg-0">
 						<li class="nav-item">
-							<router-link to="/" class="nav-link" active-class="active" exact>Browse</router-link>
+							<router-link to="/" class="nav-link" active-class="active" exact>Home</router-link>
+						</li>
+						<li class="nav-item">
+							<router-link to="/browse" class="nav-link" active-class="active" exact>Browse</router-link>
 						</li>
 						<li class="nav-item">
 							<router-link to="/upload" class="nav-link" active-class="active" exact>Upload</router-link>
@@ -66,8 +69,8 @@
 </template>
 
 <script>
-import LoginModal from "./LoginModal.vue";
-import SignupModal from "./SignupModal.vue";
+import LoginModal from "./Modals/LoginModal.vue";
+import SignupModal from "./Modals/SignupModal.vue";
 import SiteMessage from "./SiteMessage.vue";
 
 export default {

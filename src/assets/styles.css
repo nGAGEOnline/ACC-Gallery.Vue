@@ -8,6 +8,10 @@ h1 {
     margin: 40px 10px;
 }
 
+.lead {
+	color: #b0dfd0;
+}
+
 /* BACKGROUNDS */
 .bg-secondary {
 	background-color: #263f37 !important;
@@ -50,13 +54,17 @@ h1 {
 	box-shadow: 4px 8px 8px #05050580 !important;
 }
 
-
-/* BOOTSTRAP ICONS */
-.bi {
-	padding-right: 10px;
+/* INPUT */
+label[for=floatingInput],
+label[for=floatingPassword] {
+	color: #4e6b62;
+}
+label[for=floatingInput]:active,
+label[for=floatingPassword]:active {
+	color: #488a75 !important;
+	opacity: 1;
 }
 
-/* INPUT */
 textarea,
 input[type="text"],
 input[type="password"],
@@ -122,10 +130,7 @@ input[type="color"]:focus,
 	background-color:#050505;
 	outline: 0 none;
 }
-label[for=floatingInput],
-label[for=floatingPassword] {
-	color: #21634f;
-}
+
 textarea:active,
 input[type="text"]:active,
 input[type="password"]:active,
@@ -171,6 +176,33 @@ input[type="color"]::selection,
 	outline: 0 none;
 }
 
+@keyframes slideInLeft {
+	from {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+	10% {
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translateY(-5%);
+	}
+	80% {
+		opacity: .8;
+		transform: translateY(0);
+	}
+	to {
+		opacity: 1;
+	}
+}
 @keyframes fadeIn {
 	from {
 		opacity: 0;
