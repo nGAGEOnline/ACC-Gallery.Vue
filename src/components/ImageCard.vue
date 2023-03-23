@@ -9,8 +9,9 @@
 				height="225"
 				data-bs-toggle="modal"
 				:data-bs-target="'#viewModal-' + id" />
-			<title _mstTextHash="177515" _mstHash="14">{{ name }}</title>
+
 			<text x="50%" y="50%" fill="#eceeef" dy=".3em" _mstTextHash="134056" _mstHash="15">{{ name }}</text>
+
 			<div class="card-body">
 				<p class="card-text" _msttexthash="9192963" _msthash="16" style="direction: ltr; text-align: left">
 					{{ description }}
@@ -21,8 +22,8 @@
 					</a>
 					<button type="button" class="btn btn-secondary" @click="viewImage(id)">View</button>
 				</div>
-				<div class="text-end">
-					<small class="text-muted" _msttexthash="115934" _msthash="19" style="width: 100%; text-align: right; padding: 30px 0 0 0">
+				<div class="text-end mt-4">
+					<small class="text-muted" _msttexthash="115934" _msthash="19">
 						{{ randomTimestamp }}
 					</small>
 				</div>
@@ -90,34 +91,37 @@ export default {
 }
 
 .card {
+	border-color: #151515;
+	border-radius: 10px;
+	color: #81e4c6;
 	animation: scaleBack 0.3s ease-in-out forwards;
 	box-shadow: 2px 4px 4px #05050580;
+}
+.card-body {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #105540;
 }
 .card:hover {
 	animation: scaleUp 0.2s ease-in-out forwards;
 	z-index: 100;
 }
-.card img:hover {
+.card img {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 	cursor: pointer;
 }
-.card,
-.card-body {
-	border-color: #151515;
-	border-radius: 10px;
-}
-.card-body {
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-}
-.card text,
-.card-body {
-	background-color: #105540;
-}
+
 .card text {
+	color: #a6f0da;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	background-color: #173028;
-	border-bottom: 1px solid #0d221c;
 	padding: 5px 0 5px 15px;
 	font-weight: bold;
+}
+
+div small.text-muted {
+	color: #22a77f !important;
 }
 
 @keyframes scaleUp {

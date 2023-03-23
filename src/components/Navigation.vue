@@ -58,6 +58,7 @@
 				</div>
 			</div>
 		</nav>
+		<SiteMessage />
 	</header>
 
 	<LoginModal />
@@ -65,13 +66,15 @@
 </template>
 
 <script>
-import LoginModal from './LoginModal.vue';
-import SignupModal from './SignupModal.vue';
+import LoginModal from "./LoginModal.vue";
+import SignupModal from "./SignupModal.vue";
+import SiteMessage from "./SiteMessage.vue";
 
 export default {
 	components: {
 		LoginModal,
-		SignupModal
+		SignupModal,
+		SiteMessage,
 	},
 	name: "NavHeader",
 };
@@ -82,6 +85,10 @@ export default {
 	content: "Gallery";
 }
 
+header {
+	border-bottom: 2px solid #1f7a5f !important;
+	box-shadow: 2px 4px 8px #05050580 !important;
+}
 a.branding {
 	font-family: "Roboto Condensed", sans-serif;
 	color: white;
@@ -101,14 +108,10 @@ span.navbar-toggler-icon {
 	padding: 0;
 }
 
-.shadow-lg {
-	box-shadow: 4px 8px 8px #05050580 !important;
-}
 .navbar {
-  font-family: "Roboto Condensed", sans-serif;
-	box-shadow: 2px 4px 8px #05050580 !important;
+	font-family: "Roboto Condensed", sans-serif;
 	background-color: #151515 !important;
-	border-bottom: 2px solid #158f6a;
+	border-bottom: 2px solid #1f7a5f;
 	padding: 0;
 }
 .navbar-brand {
@@ -121,7 +124,7 @@ span.navbar-toggler-icon {
 }
 
 .nav-link {
-	color: #158f6a;
+	color: #1f7a5f;
 	line-height: 40px;
 	margin: 0 4px;
 	padding: 10px 20px;
