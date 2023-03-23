@@ -22,3 +22,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Sample Site
+A sample is hosted at (http://acc-gallery.ngageonline.net/browse)
