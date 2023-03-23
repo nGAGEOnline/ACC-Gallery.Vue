@@ -35,6 +35,7 @@ export default {
 <style scoped>
 .container.my-4 {
     animation: fadeInDown .3s ease-in forwards;
+	font-size: 1.1em;
 }
 a {
 	color: #488a75;

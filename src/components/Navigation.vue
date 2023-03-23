@@ -32,6 +32,9 @@
 						<li class="nav-item">
 							<router-link to="/about" class="nav-link" active-class="active" exact>About</router-link>
 						</li>
+						<!-- <li class="nav-item">
+							<router-link to="/not-found" class="nav-link" active-class="active" exact>Not Found</router-link>
+						</li> -->
 						<li class="nav-item d-lg-none">
 							<a href="https://github.com/nGAGEOnline/vue-image-gallery-test" class="nav-link" target="_blank">Github</a>
 						</li>
