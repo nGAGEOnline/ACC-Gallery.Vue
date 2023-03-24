@@ -1,4 +1,5 @@
 <template>
+	<teleport to="title">404 - Not Found</teleport>
 	<div class="container my-4">
 		<div class="row mt-5">
 			<div class="col-md-8 pb-5 mx-auto rounded-4 shadow-lg bg-secondary">
