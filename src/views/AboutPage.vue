@@ -1,8 +1,8 @@
 <template>
 	<teleport to="title"> About</teleport>
 	<div class="container my-4">
-		<h1 class="display-4 fw-bold lh-1">About This Site</h1>
-		<div class="row p-4 pb-0 pe-lg-0 pt-lg-3 align-items-center rounded-4 shadow-lg bg-secondary">
+		<h1 class="fw-bold mx-auto col-md-10">About This Site</h1>
+		<div class="row mx-auto col-md-11 p-4 pb-0 pe-lg-0 pt-lg-3 align-items-center rounded-4 shadow-lg bg-secondary">
 			<h3>Welcome to my first attempt at working with Vue,...</h3>
 			<p>
 				Vue is a popular JavaScript framework for building web applications. I created this website as part of a "Bee-Ideas IT Bootcamp" objective for

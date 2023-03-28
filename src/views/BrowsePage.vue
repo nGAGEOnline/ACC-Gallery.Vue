@@ -1,10 +1,10 @@
 <template>
 	<teleport to="title"> Browse</teleport>
 	<main>
-		<div class="container pb-5">
-			<h1 class="display-4 fw-bold lh-1">Browse Images</h1>
-			<div class="row row-cols-1 row-cols-lg-3 row-cols-sm-1 row-cols-md-2 g-3">
-				<div class="col-12" v-for="image in images" :key="image.id">
+		<div class="container pb-4">
+			<h1 class="display-4 fw-bold lh-1 mx-auto col-md-10">Browse Images</h1>
+			<div class="row mx-auto col-md-11 row-cols-1 row-cols-lg-3 row-cols-sm-1 row-cols-md-2 g-3">
+				<div v-for="image in images" :key="image.id">
 					<ImageCard :id="image.id" :url="image.url" :name="image.name" :description="image.description" />
 				</div>
 			</div>

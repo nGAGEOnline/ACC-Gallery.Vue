@@ -1,9 +1,8 @@
 <template>
 	<teleport to="title"> Upload</teleport>
 	<div class="container">
-		<h1 class="display-4 fw-bold lh-1">Upload</h1>
-		<div class="container-fluid py-5 col-md-10 jumpbotron bg-secondary shadow-lg p-0 p-sm-3 p-lg-5 text-center">
-			<!-- <object data="/images/ACC-logo-black.svg" type="image/svg+xml" class="acc-logo"></object> -->
+		<h1 class="display-4 fw-bold lh-1 mx-auto col-md-10">Upload</h1>
+		<div class="container-fluid py-5 col-md-11 jumpbotron bg-secondary shadow-lg p-0 p-sm-3 p-lg-5 text-center">
 			<img src="/images/ACC-logo-black.png" alt="ACC Logo" class="acc-logo" />
 
 			<p class="lead mb-5 mt-3">

@@ -6,7 +6,7 @@
 				:alt="name"
 				class="bd-placeholder-img card-img-top"
 				width="100%"
-				height="225"
+				height="200"
 				data-bs-toggle="modal"
 				:data-bs-target="'#viewModal-' + id" />
 
