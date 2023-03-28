@@ -46,5 +46,6 @@ export default {
 		SiteMessage,
 	},
 	name: "LoginModal",
+
 };
 </script>

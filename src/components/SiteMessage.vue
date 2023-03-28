@@ -1,7 +1,9 @@
 <template>
-	<div class="site-message">
-		<div class="container">
-			<p>This webiste is just a sample project made with VUE. There is no backend, so 'login', 'sign up' and 'upload' are just for show</p>
+	<div v-if="showSiteMessage">
+		<div class="site-message">
+			<div class="container">
+				<p>This webiste is just a sample project made with VUE. There is no backend, so 'login', 'sign up' and 'upload' are just for show.</p>
+			</div>
 		</div>
 	</div>
 </template>
@@ -9,10 +11,19 @@
 <script>
 export default {
 	name: "SiteMessage",
+	data() {
+		return {
+			showSiteMessage: true
+		};
+	},
 };
 </script>
 
 <style scoped>
+i.dismiss {
+	font-weight: bold;
+	text-decoration: underline;
+}
 .site-message {
 	background-color: #1f634e;
 	background-image: linear-gradient(90deg, #114434 0%, #1f7a5f 50%, #114434 100%);

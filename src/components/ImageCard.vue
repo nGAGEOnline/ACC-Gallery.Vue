@@ -1,6 +1,6 @@
 <template>
 	<div class="col">
-		<div class="card" :class="{ 'first-load': firstLoad, 'hovers': afterLoad }" :style="firstLoad ? { animationDelay: `${delay}s` } : null">
+		<div class="card" :class="{ 'first-load': firstLoad }" :style="firstLoad ? { animationDelay: `${delay}s` } : null">
 			<img
 				:src="url"
 				:alt="name"
@@ -72,9 +72,6 @@ export default {
 	mounted() {
 		setTimeout(() => {
 			this.firstLoad = false;
-			this.$nextTick(() => {
-				this.afterLoad = true;
-			});
 		}, 1800); // 3 second delay in milliseconds
 	},
 	computed: {
@@ -96,21 +93,18 @@ export default {
 <style scoped>
 
 .first-load {
-	opacity: 0;
-	animation: fadeInDown .5s ease-in forwards;
-}
-.hovers {
-	animation-delay: 0;
-}
-.hovers:hover {
-	animation: scaleUp 0.2s ease-in-out both;
-	z-index: 100;
+	opacity: 0; 
+	animation: fadeInDown .33s ease-in forwards;
 }
 .card {
 	border-color: #151515;
 	border-radius: 10px;
 	color: #81e4c6;
 	box-shadow: 2px 4px 4px #05050580;
+	transition: transform .2s;
+}
+.card:hover {
+	transform: scale(1.05);
 }
 .card-body {
 	border-bottom-left-radius: 10px;

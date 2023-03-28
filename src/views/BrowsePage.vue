@@ -1,5 +1,5 @@
 <template>
-	<teleport to="title">Browse</teleport>
+	<teleport to="title"> Browse</teleport>
 	<main>
 		<div class="container pb-5">
 			<h1 class="display-4 fw-bold lh-1">Browse Images</h1>

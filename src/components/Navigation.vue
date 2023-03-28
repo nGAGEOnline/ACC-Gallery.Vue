@@ -15,26 +15,26 @@
 				</button>
 
 				<div class="container collapse navbar-collapse" id="navbarNav">
-					<router-link to="/" class="navbar-brand branding">
+					<RouterLink to="/" class="navbar-brand branding">
 						<img src="/logo.png" width="30" height="30" />
 						ACC
-					</router-link>
+					</RouterLink>
 					<ul class="navbar-nav col-sm-12 col-lg-8 mb-2 mb-lg-0">
 						<li class="nav-item">
-							<router-link to="/" class="nav-link" active-class="active" exact>Home</router-link>
+							<RouterLink to="/" class="nav-link" active-class="active" exact>Home</RouterLink>
 						</li>
 						<li class="nav-item">
-							<router-link to="/browse" class="nav-link" active-class="active" exact>Browse</router-link>
+							<RouterLink to="/browse" class="nav-link" active-class="active" exact>Browse</RouterLink>
 						</li>
 						<li class="nav-item">
-							<router-link to="/upload" class="nav-link" active-class="active" exact>Upload</router-link>
+							<RouterLink to="/upload" class="nav-link" active-class="active" exact>Upload</RouterLink>
 						</li>
 						<li class="nav-item">
-							<router-link to="/about" class="nav-link" active-class="active" exact>About</router-link>
+							<RouterLink to="/about" class="nav-link" active-class="active" exact>About</RouterLink>
 						</li>
-						<!-- <li class="nav-item">
+						<li class="nav-item">
 							<router-link to="/not-found" class="nav-link" active-class="active" exact>Not Found</router-link>
-						</li> -->
+						</li>
 						<li class="nav-item d-lg-none">
 							<a href="https://github.com/nGAGEOnline/vue-image-gallery-test" class="nav-link" target="_blank">Github</a>
 						</li>

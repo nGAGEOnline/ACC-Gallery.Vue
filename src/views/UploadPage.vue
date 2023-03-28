@@ -1,5 +1,5 @@
 <template>
-	<teleport to="title">Upload</teleport>
+	<teleport to="title"> Upload</teleport>
 	<div class="container">
 		<h1 class="display-4 fw-bold lh-1">Upload</h1>
 		<div class="container-fluid py-5 col-md-10 jumpbotron bg-secondary shadow-lg p-0 p-sm-3 p-lg-5 text-center">

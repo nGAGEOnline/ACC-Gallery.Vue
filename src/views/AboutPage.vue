@@ -1,5 +1,5 @@
 <template>
-	<teleport to="title">About</teleport>
+	<teleport to="title"> About</teleport>
 	<div class="container my-4">
 		<h1 class="display-4 fw-bold lh-1">About This Site</h1>
 		<div class="row p-4 pb-0 pe-lg-0 pt-lg-3 align-items-center rounded-4 shadow-lg bg-secondary">
